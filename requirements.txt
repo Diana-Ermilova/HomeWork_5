@@ -1,4 +1,4 @@
 pytest
 selene>=2.0.0rc7
 selenium
-
+allure-pytest>=2.9.45
