@@ -1,9 +1,8 @@
 import pytest
-from time import sleep
 from selene import browser, have
 import os
 import allure
-from utils.attach import *
+
 
 @allure.title("Successfull fill form")
 def test_fill_form():
@@ -60,7 +59,7 @@ def test_fill_form():
                 'Other',
                 '8800123121',
                 '18 September,1996',
-                '_Physics',
+                'Physics',
                 'Sports',
                 'pigeon.jpg',
                 'London, county of Surrey, Privet Drive 4',
@@ -68,8 +67,3 @@ def test_fill_form():
             )
         )
 
-
-    add_screenshot(browser)
-    add_logs(browser)
-    add_html(browser)
-    add_video(browser)
